@@ -16,7 +16,10 @@ export default function createStore(reducer){
     dispatch,
     getState
   }
+}
 
+// solution
+export default function createStore(reducer){
 }
 
 function render(){
