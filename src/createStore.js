@@ -1,4 +1,5 @@
 export default function createStore(reducer) {
+  // Declares the state variable
   let state;
 
   // Takes in an action, updates the state using the reducer,
