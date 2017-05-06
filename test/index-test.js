@@ -22,10 +22,10 @@ describe('createStore', function() {
       expect(candyStore.getState()).toEqual([]);
     })
 
-    it('returns the default state based on the reducer for the countStore', function(){
-      expect(countStore.getState()).toBeA('number')
-      expect(countStore.getState()).toEqual(0)
-    })
+    // it('returns the default state based on the reducer for the countStore', function(){
+    //   expect(countStore.getState()).toBeA('number')
+    //   expect(countStore.getState()).toEqual(0)
+    // })
   })
 
   describe('dispatch', function(){
