@@ -7,4 +7,6 @@ function candyReducer(state = [], action) {
   }
 }
 
+
+
 export default candyReducer;
