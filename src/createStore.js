@@ -1,7 +1,31 @@
+import countReducer from './reducers/countReducer.js';
+import candyReducer from './reducers/candyReducer.js';
+
 export default function createStore(reducer) {
-  // add your code here
-}
+
+  let state;
+
+  function getState() {
+    return state;
+  }
+
+  function dispatch(action) {
+    state = reducer(state, action);
+    render();
+  }
+
+  dispatch({type: '@@INIT'});
+
+  return {
+    getState,
+    dispatch
+  };
+
+};
 
 function render() {
-  const container = document.getElementById('container');
+  console.log('whoo');
 }
+
+// createStore(countReducer).dispatch({ type: '@@INIT' });
+// createStore(candyReducer).dispatch({ type: '@@INIT' });
