@@ -18,7 +18,6 @@ export default function createStore(reducer) {
   };
 }
 
-
 function render() {
   let container = document.getElementById('container');
 };
