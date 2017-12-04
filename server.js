@@ -1,0 +1,1 @@
+"start": "webpack-dev-server --hot"
