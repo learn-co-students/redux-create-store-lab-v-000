@@ -1,4 +1,6 @@
-function candyReducer(state = [], action) {
+const candyReducerDefaultState = []
+
+function candyReducer(state = candyReducerDefaultState, action) {
   switch (action.type) {
     case 'ADD_CANDY':
       return [...state, action.candy];
@@ -6,5 +8,10 @@ function candyReducer(state = [], action) {
       return state;
   }
 }
+
+// let candyStore = createStore(candyReducer);
+// dispatch({type: '@@INIT'})
+let candyStore = createStore(candyReducer);
+candyStore.dispatch('initialize')
 
 export default candyReducer;
