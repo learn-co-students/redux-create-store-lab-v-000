@@ -1,4 +1,5 @@
-
+import candyReducer from '../src/reducers/candyReducer';
+import countReducer from '../src/reducers/countReducer';
 
 export default function createStore(reducer) {
   let state;
@@ -23,3 +24,6 @@ export default function createStore(reducer) {
 function render() {
   const container = document.getElementById('container');
 }
+
+let candyStore = createStore(candyReducer);
+let countStore = createStore(countReducer);
