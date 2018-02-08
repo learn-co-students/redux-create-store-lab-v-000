@@ -11,7 +11,7 @@ export default function createStore(reducer) {
     return state
   }
 
-  dispatch({type: '@@INIT'})
+  dispatch(state, {type: '@@INIT'})
 
   return {
     dispatch,
