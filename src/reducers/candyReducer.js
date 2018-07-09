@@ -8,3 +8,10 @@ function candyReducer(state = [], action) {
 }
 
 export default candyReducer;
+
+
+
+// {
+//   type: 'ADD_CANDY',
+//   candy: 'Butterfinger'
+// }
