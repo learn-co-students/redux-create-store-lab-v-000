@@ -1,12 +1,12 @@
-function countReducer(state = 0, action) {
+function countReducer (state = 0, action) {
   switch (action.type) {
     case 'INCREMENT_COUNT':
-      return state + 1;
+      return state + 1
     case 'DECREMENT_COUNT':
-      return state - 1;
+      return state - 1
     default:
-      return state;
+      return state
   }
 }
 
-export default countReducer;
+export default countReducer
