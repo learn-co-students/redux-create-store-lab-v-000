@@ -1,5 +1,4 @@
 export default function createStore(reducer) {
-  function createStore(reducer){
 let state
 
 function dispatch(action){
@@ -10,9 +9,12 @@ function dispatch(action){
 function getState(){
   return state
 }
-return { dispatch, getState }
+
+dispatch({ type: "@@INIT"})
+
+  return { dispatch, getState }
 }
-}
+
 
 function render() {
   const container = document.getElementById('container');
