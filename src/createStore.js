@@ -17,15 +17,6 @@ export default function createStore(reducer) {
   }
 }
 
-function changeCount(state = { count: 0 }, action) {
-  switch (action.type) {
-    case 'DECREASE_COUNT':
-      return { count: state.count - 1 };
-    default:
-      return state;
-  }
-}
-
 function render() {
   const container = document.getElementById('container');
 }
