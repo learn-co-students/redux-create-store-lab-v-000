@@ -10,9 +10,7 @@ describe('createStore', function() {
   beforeEach(function(){
     global.document = jsdom.jsdom('<html><body><div id="container"></div></body></html>');
     candyStore = createStore(candyReducer);
-    countStore = createStore(countReducer);
-    candyStore.dispatch({type: "@@INIT"});
-    countStore.dispatch({type: "@@INIT"});    
+    countStore = createStore(countReducer); 
   })
 
   it('returns an object', function() {
