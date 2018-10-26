@@ -10,3 +10,5 @@ function countReducer(state = 0, action) {
 }
 
 export default countReducer;
+
+//this reducer adds/subtracts the number of candies based on the action type
