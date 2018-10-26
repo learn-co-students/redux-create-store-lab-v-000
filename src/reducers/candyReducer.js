@@ -8,3 +8,5 @@ function candyReducer(state = [], action) {
 }
 
 export default candyReducer;
+
+// this reducer adds a candy to state's array
