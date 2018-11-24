@@ -10,6 +10,7 @@ function createStore(reducer){
 		state = reducer(state, action)
 		render()
 	}
+	dispatch({ type: '@@INIT' })
 
 	function getState(){
 		return state
@@ -27,3 +28,7 @@ function createStore(reducer){
 function render() {
   const container = document.getElementById('container');
 }
+
+
+// let countStore = createStore(countReducer)
+// countStore.dispatch({ type: '@@INIT' })
