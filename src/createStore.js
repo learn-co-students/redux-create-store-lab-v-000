@@ -2,7 +2,7 @@ export default function createStore(reducer) {
   let state;
 
   function dispatch(action) {
-    state = reducer;
+    state = reducer(state, action);
     render();
   }
 
@@ -10,14 +10,12 @@ export default function createStore(reducer) {
     return state;
   }
 
+  dispatch({ type: '@@INIT' })
+
   return { dispatch, getState };
 
-};
-
-let store = createStore();
-store.dispatch({ type: '@@INIT' });
+}
 
 function render() {
   const container = document.getElementById('container');
-  container.textContent = store.getState()
 }
