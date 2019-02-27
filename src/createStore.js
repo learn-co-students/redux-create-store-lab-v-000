@@ -19,4 +19,5 @@ store.dispatch({ type: '@@INIT' });
 
 function render() {
   const container = document.getElementById('container');
+  container.textContent = store.getState()
 }
