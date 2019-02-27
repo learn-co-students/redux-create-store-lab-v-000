@@ -1,3 +1,5 @@
+import React from 'react';
+
 function candyReducer(state = [], action) {
   switch (action.type) {
     case 'ADD_CANDY':
