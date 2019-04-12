@@ -11,6 +11,8 @@ describe('createStore', function() {
     global.document = jsdom.jsdom('<html><body><div id="container"></div></body></html>');
     candyStore = createStore(candyReducer);
     countStore = createStore(countReducer);
+    candyStore.dispatch({type: "init"});
+    countStore.dispatch({type: "init"});
   })
 
   it('returns an object', function() {
@@ -33,7 +35,6 @@ describe('createStore', function() {
     it('can dispatch actions to update the state', function(){
       countStore.dispatch({type: 'INCREMENT_COUNT'});
       expect(countStore.getState()).toEqual(1);
-
     })
 
     it('can dispatch actions with data associated', function(){
