@@ -1,5 +1,17 @@
 export default function createStore(reducer) {
-  // add your code here
+  let state;
+  
+  function dispatch(action) {
+    state = reducer(state, action);
+    render();
+  }
+  
+  function getState() {
+    dispatch({ type: '@@INIT' });
+    return state;
+  }
+
+  return { getState, dispatch }
 }
 
 function render() {
