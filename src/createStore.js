@@ -1,6 +1,3 @@
-import CountReducer from './reducers/countReducer';
-import CandyReducer from './reducers/candyReducer';
-
 export default function createStore(reducer) {
   let state;
 
