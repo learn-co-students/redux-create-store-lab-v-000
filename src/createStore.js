@@ -9,7 +9,9 @@ export default function createStore(reducer) {
   function getState() {
     return state
   }
- 
+	
+	state = dispatch({ type: '@@INIT' })
+	
   return {
     dispatch,
     getState
