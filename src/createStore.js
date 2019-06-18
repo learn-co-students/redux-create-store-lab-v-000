@@ -14,13 +14,15 @@ export default function createStore(reducer) {
 		return state;
 	}
 
+	dispatch({ type: '@@INIT' });
+
 	return {
 		dispatch,
 		getState
 	};
 }
 // let store = createStore(reducer);
-// store.dispatch({ type: '@@INIT' });
+// dispatch({ type: '@@INIT' });
 function render() {
 	const container = document.getElementById('container');
 }
