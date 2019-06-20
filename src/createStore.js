@@ -1,5 +1,3 @@
-import candyReducer from './reducers/candyReducer';
-
 export default function createStore(reducer) {
   let state;
 
@@ -12,13 +10,15 @@ export default function createStore(reducer) {
     return state
   }
 
+  dispatch({ type: '@@INIT' })
+
   return {
     dispatch,
     getState
   }
 }
 
-// function render() {
-//   let container = document.getElementById('container');
-//   container.textContent = store.getState().count;
-// };
+
+function render() {
+   const container = document.getElementById('container');
+}
