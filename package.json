@@ -4,6 +4,7 @@
   "description": "Build a small React application using all that you&#39;ve learned in the course",
   "main": "index.js",
   "scripts": {
+    "start": "react-scripts start",
     "debug": "node-debug --hidden node_modules _mocha --watch",
     "debug-ide": "./bin/debug-ide",
     "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
@@ -37,6 +38,19 @@
     "babel-preset-env": "^1.7.0",
     "jsdom": "^9.9.1",
     "react": "^15.3.0",
-    "react-dom": "^15.3.0"
+    "react-dom": "^15.3.0",
+    "react-scripts": "^3.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
