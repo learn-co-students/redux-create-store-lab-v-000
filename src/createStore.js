@@ -22,8 +22,6 @@ export default function createStore(reducer) {
 }
 
 
-
-
 function render() {
   let offeringsContainer = document.getElementById('offerings-container');
   offeringsContainer.textContent = store.getState().count;
