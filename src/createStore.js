@@ -17,6 +17,6 @@ export default function createStore(reducer) {
   };
 };
 
-function render(state = { state: [] }, action) {
+function render() {
   const container = document.getElementById('container');
 }
