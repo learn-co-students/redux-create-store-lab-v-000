@@ -34,4 +34,5 @@ function render() {
   }
 };
 
-let store = createStore()// once the store is created, call an initial dispatch
+let store = createStore(candyReducer);
+// once the store is created, call an initial dispatch
