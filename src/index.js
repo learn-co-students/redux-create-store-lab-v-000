@@ -35,4 +35,4 @@ function render() {
 };
 
 let store = createStore(candyReducer);
-dispatch("@@init");
+store.dispatch("@@init");
