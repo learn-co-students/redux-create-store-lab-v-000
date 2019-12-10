@@ -1,8 +1,8 @@
-function createStore(candyReducer) {
+function createStore(reducer) {
   let state;
 
   function dispatch(action) {
-    state = candyReducer(state, action);
+    state = reducer(state, action);
     render();
   };
 
@@ -35,4 +35,4 @@ function render() {
 };
 
 let store = createStore(candyReducer);
-// once the store is created, call an initial dispatch
+dispatch("@@init");
