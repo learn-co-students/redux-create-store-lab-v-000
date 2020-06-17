@@ -39,10 +39,3 @@ function render() {
 let store = createStore(candyReducer);
 // once the store is created, call an initial dispatch
 store.dispatch({ type: '@@INIT' })
-
-let button = document.getElementById("button");
-button.addEventListener("click", () => {
-  // store.dispatch({ type: 'ADD_CANDY' })
-  console.log(store.getState().join(' '))
-})
-
